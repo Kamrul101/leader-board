@@ -178,10 +178,6 @@ hr {
 @media screen and (max-width: 692px) {
   .banner {
     width: 100%;
-    /* padding-right: 0;
-    padding-left: 0;
-    margin-left: 15px;
-    margin-right: 15px; */
   }
   .logo {
     display: flex;
@@ -195,13 +191,27 @@ hr {
   .container {
     width: 100%;
     padding: 0;
-    padding-left: 10px;
   }
   .players {
     grid-template-columns: repeat(1, 1fr);
   }
   .player {
     flex-direction: column;
+  }
+  .blogs {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .latest {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 1rem;
+  }
+}
+@media screen and (min-width: 693px) and (max-width: 992px) {
+  .container {
+    width: 75%;
+  }
+  .players {
+    grid-template-columns: repeat(3, 1fr);
   }
   .blogs {
     grid-template-columns: repeat(1, 1fr);
